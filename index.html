@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWIT MELAKU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/solid.css">
+    <link rel="short icon" href="img/image.png">
+</head>
+<body>
+    <div class="container" >
+    </div>
+    
+    <header class="sticky" >
+        <button></button>
+        <div class="div">
+
+            <h1 onclick="
+            window.location.href='index.html'
+                "> <div class="class1" >DAWIT</div>  <div class="code" >MELAKU</div></h1>
+    
+            <div class="div1" >
+            <a id="active" class="active" href=""><i class="fa fa-home"></i> Home</a>
+            <a id="active"  class="ab" href="about.html"><i class="fa-solid fa-user" ></i> About</a>
+            <a id="active" href="service.html"><i class="fa-solid fa-dice" ></i> Services</a>
+            <a id="active" href="project.html"><i class="fa-solid fa-spa" ></i> Projects</a>
+            <a id="active" class="co" href="contact.html"><i class="fa-solid fa-message" ></i>  Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="mainimg" >
+        <img src="img/Untitled Project (13).jpg" alt="">
+    </div>
+    <div class="maintext">
+        <p class="p1" >Hi,I'm Dawit. This is my portfolio website<br> I have many 
+        professional skills.<br>
+        </p>
+        </div>
+        <div class="mainbutton">
+          <a href="about.html"><button>About Me</button></a>
+        </div>
+    <main>
+    <div class="animated-text">
+      <h2>I'm a</h2> <span></span>
+      <p class="p2">This is my official portfolio website. I'll do better for your company. <br>
+        For your grow up choice me with cheap price & with high experience<br>
+        What do tou want to BOOK?</p>
+      <a href="about.html"><button class="bbb">ABOUT ME</button></a>
+    </div>
+    <div class="main1" >
+       
+       <img class="img" src="img/Untitled Project (14).jpg" alt="">
+       <img src="img/Untitled Project (13).jpg" alt="">
+
+    </div>
+    </main>
+    <footer>
+       <button class="ti" ><a href="https://tiktok.com/@dj_dave00"> <i class="fab fa-tiktok"></i></a></button>
+       <button class="ig"><a href="https://instagram.com/da_it_el_k_"><i class="fab fa-instagram"></i></a></button>
+        <button class="yt"><a href="https://www.facebook.com/profile.php?id=61564438178212&__cft__[0]=AZUHWN6NYve2fTZeEP9LUt-lQlmvWBq8s82C3h1ttLhOO70RM4wG_VlxzLEt6sHon1X_Z0_XnZ3zivx10jlIFfkhs3kVMyILcr1kC0B3q5VKvMVnBX3uB2ZsJxt8qBbJ62Accrd3olII_NmGz4RQkx_6OttAXPOjdPwYLtxCauWp1g&__tn__=-UC%2CP-R"><i class="fab fa-facebook-f"></i></a></button>
+       
+        <button class="yot" ><a href="https://youtube.com/@ON-SOLUTION-TECH"> <i class="fab fa-youtube"></i></a></button>
+        <button class="gi" ><a href="https://github.com/dawit-1092"> <i class="fab fa-github"></i></a></button>
+    </footer>
+       <h3 id="ve">Developed by -<a href="" id="dave"> DAWIT MELAKU ☹ </a></h3>
+       <div class="bara">
+        <svg id="bar" xmlns="http://www.w3.org/2000/svg" style="position: absolute; transform: translate(270px,-450px);" height="23px" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+         </div>
+         <style>
+          @media screen and (min-width:600px) {
+            .bara svg{
+              display: none;
+            }
+          }
+          .bara svg{
+    animation: over 1.5s ease-out;
+   }
+    @keyframes over {
+        from {
+          transform: translateX(270px) translateY(-550px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(270px) translateY(-450px);
+          opacity: 1;
+        }
+    }
+         </style>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>      
+      <script>
+        let bar=document.getElementById("bar")
+        bar.addEventListener("click",function(ev){
+          let div=document.createElement("div")
+          div.style.cssText="display:flex;width:100%;height:100px;background: linear-gradient(45deg,rgb(138, 27, 182),  rgb(114, 20, 151), rgb(134, 12, 175), rgb(196, 84, 206));position:absolute; transform: translate(0px,-500px);"
+          document.body.appendChild(div)
+          let parent=document.createElement("div")
+          parent.style.cssText="display:flex;width:100%;height:18vh;justify-content:space-between;align-items:center;transform:translate(-17px)"
+          div.appendChild(parent)
+          let removei=document.createElement("p")
+          removei.innerText="Close"
+          removei.style.cssText="text-decoration:underline;transform:translate(68px,-30px);color:white"
+          parent.appendChild(removei)
+          let about=document.createElement("a")
+          about.setAttribute("href","about.html")
+          about.innerText="About"
+          about.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(about)
+          let skills=document.createElement("a")
+          skills.setAttribute("href","service.html")
+          skills.innerText="Services"
+          skills.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(skills)
+          let project=document.createElement("a")
+          project.setAttribute("href","project.html")
+          project.innerText="Projects"
+          project.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(project)
+          let contact=document.createElement("a")
+          contact.setAttribute("href","contact.html")
+          contact.innerText="Contact"
+          contact.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(contact)
+          removei.addEventListener("click",function(){
+            div.style.cssText="display:none"
+          })
+        })
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $(".div").addClass("black");
+            }
+            else{
+                $(".div").removeClass("black");
+            }
+        });
+        /*var header = document.getElementById(".div1");
+var btns = header.getElementsByClassName("ac");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}*/
+        </script>
+</body>
+</html>

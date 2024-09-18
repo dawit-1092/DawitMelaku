@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: font2;
+    src: url(fonst/PositiveForward.otf);
+}
+@font-face{
+    font-family: myFont;
+    src: url(fonst/SuperMario256.ttf);
+}
+@font-face{
+    font-family: font;
+    src: url(fonst/Save\ Lemon.otf);
+}
+@font-face{
+    font-family: font1;
+    src: url(fonst/Morica\ PERSONAL\ USE\ ONLY!.ttf);
+}
+h3{
+    color: rgb(199, 194, 204);
+    transform: translateY(90px);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    font-family: font;
+    translate: -10px;
+}
+h3 a{
+    color: white;
+    text-decoration: none;
+    font-family: font1;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: translateX(5px) translateY(-5px);
+}
+h3 a:hover{
+    color: #03b6fd;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(0, 0, 0),  rgb(90, 12, 153), rgb(150, 99, 197), rgb(196, 84, 206));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+}
+
+.div.black {
+    background: linear-gradient(45deg,rgb(116, 30, 165),  rgb(90, 12, 153), rgb(150, 99, 197), rgb(196, 84, 206));
+    animation: color 12s ease-in-out infinite;
+    transition: 1s;
+    height: 100px;
+}
+
+@keyframes color{
+    0%{
+     background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+       }
+       100%{
+        background-position: 0 50%;
+       }
+}
+
+header .div{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+.div img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    opacity: 70%;
+}
+
+.div h1{
+    color: rgb(159, 86, 228);
+    font-family: myFont;
+    font-weight: bold;
+    display: flex;
+    transform: translateX(-23px);
+    animation: slide-in 1.5s ease-out;
+    cursor: pointer;
+}
+
+.div .code{
+    color: rgb(165, 87, 211);
+    transform: translateY(28px) translateX(-30px);
+    letter-spacing: 1px;
+}
+.class1{
+    color: rgb(67, 118, 177);
+}
+header button{
+    width: 100%;
+    border-radius: 5px;
+    height: 4px;
+    border: none;
+    background: linear-gradient(45deg,rgb(143, 83, 173),  rgb(101, 12, 153), rgb(107, 31, 179), rgb(196, 84, 206));
+    animation: color 12s ease-in-out infinite;
+    box-shadow:  0px 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: fixed;
+    transform: translateY(100px);
+    animation: ease-out 1.5s ease-out;
+}
+header button:hover{
+    background-color: rgb(186, 39, 223);
+    transition: 0.5s;
+}
+header button::after{
+    transition: 0.5s;
+}
+@keyframes ease-out {
+    from {
+      transform: translateX(-100%) translateY(90px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px) translateY(100px);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-23px) translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-23px) translateY(0px);
+      opacity: 1;
+    }
+}
+.div1 a{
+    text-decoration: none;
+    color: rgb(207, 197, 197);
+    margin: 15px;
+    font-family: font;
+    animation: slide-out 1.8s forwards;
+    font-weight: bold;
+}
+
+
+@keyframes slide-out {
+    from {
+      transform: translateX(-70px) translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-70px) translateY(0px);
+      opacity: 1;
+    }
+}
+.div1{
+    transform: translateY(20px)translateX(70px);
+    display: flex;
+}
+.div1 a:hover,
+.active{
+    color: rgb(200, 129, 233);
+    transition: 0.5s;
+}
+main{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.main1 img{
+    position: absolute;
+    transform: translateX(-500px)translateY(-70px);
+    width: 380px;
+    box-shadow: -10px 0px 200px rgba(118, 170, 129, 0.3);
+    border-radius: 50%;
+    transition: 0.7s;
+    height: auto;
+    cursor: pointer;
+}
+.main1 .img{
+    box-shadow: -10px 0px 200px rgba(236, 35, 35, 0.3);
+}
+.main1 img:hover{
+    transition: 0.7s;
+    opacity: 0;
+}
+main p{
+   position: absolute;
+   color: rgb(201, 199, 199);
+   font-family: font2;
+   font-size: 22px;
+   transform: translateY(50px) translateX(50px);
+   display: flex;
+   
+}
+main h2{
+    position: absolute;
+    color: rgb(155, 154, 154);
+    transform: translateX(50px)translateY(15px);
+    font-family: font;
+    font-weight: bolder;
+    animation: slide-out 0.5s ease-out;
+    font-size: 33px;
+}
+.animated-text span{
+    position: relative;
+    transform: translateX(130px) translateY(15px);
+    display: flex;
+    font-size: 40px;
+    font-family: font2;
+    cursor: text;
+}
+.animated-text span::before{
+    content: "FULLSTACK WEB-DEVELOPER.";
+    color: #cd8be9;
+    animation: words 10s infinite;
+}
+.animated-text .bbb{
+    position: relative;
+    transform: translateY(150px) translateX(50px);
+    width: 120px;
+    background: linear-gradient(45deg,rgb(143, 83, 173),  rgb(117, 35, 165), rgb(107, 31, 179), rgb(196, 84, 206));
+    border: none;
+    border-radius: 6px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    animation: color 12s ease-in-out infinite;
+    font-family: font2;
+    letter-spacing: 2px;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 20px rgba(136, 130, 130, 0.3);
+    font-size: 1.2em;
+}
+.animated-text .bbb:hover{   
+   background: linear-gradient(45deg,rgb(138, 27, 182),  rgb(114, 20, 151), rgb(134, 12, 175), rgb(196, 84, 206));
+   transition: 0.1ms;
+   animation: color 12s ease-in-out infinite;
+   box-shadow: 0px 20px 100px rgba(136, 130, 130, 0.3);
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8px;
+    animation: cursor .8s infinite, typing 10s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+
+    21%,40%{
+        content: "VIDEO EDITOR.";
+    }
+    41%,60%{
+        content: "GRAPHICS DESIGNER.";
+    }
+    61%,80%{
+        content: "DJ-MUSIC" ;
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+footer {
+    position: absolute;
+    width: 15%;
+    transform: translateX(40px) translateY(-30px);
+    justify-content: space-around;
+    display: flex;
+}
+footer a{
+    color: black;
+    font-size: 1.5em;
+    animation: slide-out 2s ease-out;
+    transition: 0.1s;
+}
+.fa-instagram{
+    color: rgb(255, 0, 43);
+}
+.fa-youtube{
+    color: red;
+}
+.fa-facebook-f{
+    color: blue;
+}
+footer .fb{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    border: none;
+    background-color: white;
+    transition: 0.5s;
+    transform: translateX(40px);
+}
+
+footer .ti{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    transform: translateX(10px);
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    transition: 0.5s;
+}
+footer .yot{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    transform: translateX(40px);
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    transition: 0.5s;
+}
+footer .gi{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    transform: translateX(121%);
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    transition: 0.5s;
+}
+footer .yt{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(30px);
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    border: none;
+    transition: 0.5s;
+}
+footer .ig{
+    width: 45px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(116, 108, 108, 0.3);
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+
+footer .ti :hover{
+    color: rgb(189, 53, 182);
+    transition: 0.5s;
+}
+footer .yt :hover{
+    color: rgb(14, 13, 14);
+    transition: 0.5s;
+}
+footer .fb :hover{
+    color: rgb(37, 37, 37);
+    transition: 0.5s;
+}
+footer .ig :hover{
+    color: rgb(26, 25, 25);
+    transition: 0.5s;
+}
+footer .yot :hover{
+    color: rgb(26, 25, 25);
+    transition: 0.5s;
+}
+footer a:hover{
+    font-size: 1.7em;
+    transition: 0.1s;
+}
+footer .gi :hover{
+    color: rgb(124, 93, 93);
+    transition: 0.5s;
+}
+footer button{
+    cursor: pointer;
+}
+@media screen  and (max-width: 600px){
+    .div1 a{
+        display: none;
+    }
+    .animated-text .p2{
+        display: none;
+    }
+    
+    .div h1{
+        font-size: 15px;
+    }
+    .div h1 .code{
+        transform: translate(-10px,40px);
+        font-size: 18px;
+    }
+
+   .bar svg{
+    animation: over 1.5s ease-out;
+   }
+    @keyframes over {
+        from {
+          transform: translateX(270px) translateY(-550px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(270px) translateY(-450px);
+          opacity: 1;
+        }
+    }
+
+    .maintext{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .maintext .p1{
+        font-size: 18px;
+        transform: translate(0,100px);
+        font-family: font2;
+    }
+     
+    .mainimg{
+        display: flex;
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+    }
+    .mainimg img{
+        width: 180px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+
+    .class1{
+        font-size: 20px;
+        transform: translateX(20px)translateY(15px);
+    }
+    .div a{
+        transform: translateY(-10px) translateX(15px);
+        margin: 7px;
+    }
+    .animated-text{
+        transform: translateY(200px) translateX(-30px);
+        display: flex;
+        width: 100%;
+    }
+    .animated-text span{
+        font-size: 30px;
+
+        transform: translateY(20px) translateX(120px);
+    }
+    .animated-text{
+        display: none;
+    }
+    .animated-text .p3{
+        transform: translateX(50px)translateY(80px);
+    }
+    .animated-text .p1{
+        font-size: 20px;
+        transform: translateY(60px)translateX(50px);
+    }
+    .animated-text .p4{
+        transform: translateY(80px) translateX(170px);
+    }
+    .animated-text code{
+        transform: translateX(-230px)translateY(30px);
+        font-family: font2;
+        display: flex;
+    }
+    .main1 img{
+        width: 250px;
+        transform: translateX(-370px)translateY(-80px);
+    }
+    footer{
+        width: 60%;
+        height: 60px;
+        align-items: end;
+        justify-content: center;
+        display: flex;
+        transform: translate(40px,100px);
+    }
+    .mainbutton{
+        display: flex;
+        position: absolute;
+        height: 83.3vh;
+        align-items: end;
+        width: 100%;
+        justify-content: center;
+    }
+    .mainbutton a button{
+        width: 97px;
+        font-family: font1;
+        border-radius: 5px;
+        height: 35px;
+        box-shadow:  0px 5px 20px rgba(0, 0, 0, 0.3);
+        border: none;
+        color: rgb(235, 233, 229);
+        background: linear-gradient(45deg,rgb(143, 83, 173),  rgb(101, 12, 153), rgb(107, 31, 179), rgb(196, 84, 206));
+        animation: color 12s ease-in-out infinite;
+    }
+    h3{
+        display: none;
+    }
+    footer .gi{
+        width: 35px;
+        height: 35px;
+        transform: translate(48px);
+    }
+    footer .yt{
+        width: 35px;
+        height: 35px;
+    }
+    footer .ig{
+        width: 35px;
+        height: 35px;
+    }
+    footer .ti{
+        width: 35px;
+        height: 35px;
+    }
+    footer .yot{
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+@media screen and (min-width: 600px){
+    .animated-text .p1{
+        display: none;
+    }
+    .animated-text .p3{
+        display: none;
+    }
+    .animated-text .p4{
+        display: none;
+    }
+    .mainimg img{
+        display: none;
+    }
+    .maintext{
+        display: none;
+    }
+    .mainbutton{
+        display: none;
+    }
+    .bar i{
+        display: none;
+    }
+}

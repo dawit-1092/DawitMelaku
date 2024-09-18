@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Dawit Melaku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/solid.css">
+    <link rel="short icon" href="img/image.png">
+</head>
+<body>
+    <div class="container" >
+    </div>
+    <header class="sticky" >
+        <button></button>
+        <div class="div" >
+            <h1 onclick="
+            window.location.href='index.html'
+                "> <div class="class1" >DAWIT</div>  <div class="code" >MELAKU</div></h1>
+            <div class="div1" >
+            <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+            <a class="ac" href="about.html"><i class="fa-solid fa-user" ></i> About</a>
+            <a class="ac" href="service.html" ><i class="fa-solid fa-dice" ></i> Services</a>
+            <a class="ac" href="project.html" ><i class="fa-solid fa-spa" ></i> Projects</a>
+            <a class="ac" href="contact.html"><i class="fa-solid fa-message" ></i>  Contact</a>
+            </div>
+        </div>
+    </header>
+     <main>
+        <h1>ABOUT ME <code style="color: rgb(176, 175, 177)">☹</code></h1>
+        <p>I'm founder & CEO of ON-SOLUTION-TECH .<br>
+           I'm web-deveoper, video Editor, Graphics Designer & DJ-Music<br><br>
+           I have developed more than 20 websites & 2 phone Applications.<br>
+           I want to degitalize Ethiopia,so Let's work together to do this. <br>.<br>. <br>.<br>
+           እኔ ON-SOLUTION-TECH መስራች እና ዋና ስራ አስፈፃሚ ነኝ።<BR>
+           እኔ ድረገጽ-ሰሪ፣ ቪዲዮ ኤዲተር፣ ግራፊክስ ዲዛይነር እና ሙዚቃ አቀናባሪ ነኝ።<br><br>
+           ከ 20 በላይ ድረገጾችን እና 2 የስልክ መተግበርያዎችን ሰርቻለው።<br>
+           ኢትዮጵያን Digitalize ማረግ እፈልጋለው ይህን ለማድረግ በጋራ እንስራ።
+           <br>
+           </p>
+           <img src="img/image1.png" alt="">
+     </main>
+     <div class="divv"><h3 class="h3">Developed By-<a href=""> Dawit Melaku ☹ </a></h3></div>
+     <div class="bara">
+        <svg id="bar" xmlns="http://www.w3.org/2000/svg" style="position: absolute; transform: translate(270px,-670px);" height="23px" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+         </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+      <script>
+        let bar=document.getElementById("bar")
+        bar.addEventListener("click",function(ev){
+          let div=document.createElement("div")
+          div.style.cssText="display:flex;width:100%;height:100px;background: linear-gradient(45deg,rgb(138, 27, 182),  rgb(114, 20, 151), rgb(134, 12, 175), rgb(196, 84, 206));position:absolute; transform: translate(0px,-720px);"
+          document.body.appendChild(div)
+          let parent=document.createElement("div")
+          parent.style.cssText="display:flex;width:100%;height:18vh;justify-content:space-between;align-items:center;transform:translate(-17px)"
+          div.appendChild(parent)
+          let removei=document.createElement("p")
+          removei.innerText="Close"
+          removei.style.cssText="text-decoration:underline;transform:translate(53px,-30px);color:white"
+          parent.appendChild(removei)
+          let about=document.createElement("a")
+          about.setAttribute("href","about.html")
+          about.innerText="About"
+          about.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(about)
+          let skills=document.createElement("a")
+          skills.setAttribute("href","service.html")
+          skills.innerText="Services"
+          skills.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(skills)
+          let project=document.createElement("a")
+          project.setAttribute("href","project.html")
+          project.innerText="Projects"
+          project.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(project)
+          let contact=document.createElement("a")
+          contact.setAttribute("href","contact.html")
+          contact.innerText="Contact"
+          contact.style.cssText="font-size:16px;text-decoration:none;color:rgb(238, 233, 233)"
+          parent.appendChild(contact)
+          removei.addEventListener("click",function(){
+            div.style.cssText="display:none"
+          })
+        })
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $(".div").addClass("black");
+            }
+            else{
+                $(".div").removeClass("black");
+            }
+        });
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $(".div").addClass("black");
+            }
+            else{
+                $(".div").removeClass("black");
+            }
+        });
+
+
+      </script>
+      <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    transform: translateY(110px);
+}
+@font-face{
+    font-family: font2;
+    src: url(fonst/PositiveForward.otf);
+}
+@font-face{
+    font-family: myFont;
+    src: url(fonst/SuperMario256.ttf);
+}
+@font-face{
+    font-family: font;
+    src: url(fonst/Save\ Lemon.otf);
+}
+@font-face{
+    font-family: font1;
+    src: url(fonst/The\ Amazing\ Spider-Man.ttf);
+}
+        h1{
+            position: relative;
+            font-family: myFont;
+            color: blueviolet;
+            transform: translateX(55%)translateY(-200%);
+            border: none;
+        }
+        main p{
+            transform: translateX(18%) translateY(162.5%);
+            margin-bottom:59%;
+            font-family: normal;
+            font-weight: bold;
+            color: rgb(155, 154, 154);
+            
+        }
+      main img{
+        position: relative;
+        transform: translateY(32.5%) translateX(-30%);
+        box-shadow: -10px 0px 200px rgba(236, 35, 35, 0.3);
+        width: 380px;
+        border-radius: 50%;
+        height: auto;
+        cursor: pointer;
+      }
+      @media screen and (max-width:600px) {
+        main img{
+        display: none;
+      }
+        main h1{
+            display: none;
+        }
+        .divv{
+            display: none;
+        }
+        main{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        main p{
+            font-size: 16.5px;
+            padding-left: 8px;
+            transform: translate(0px,150px);
+        }
+        .bara svg{
+    animation: over 1.5s ease-out;
+   }
+    @keyframes over {
+        from {
+          transform: translateX(270px) translateY(-770px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(270px) translateY(-670px);
+          opacity: 1;
+        }
+    }
+      }
+      @media screen and (min-width:600px) {
+        .bara{
+            display: none;
+        }
+        
+      }
+      </style>
+</body>
+</html>
